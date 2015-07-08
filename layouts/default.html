@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Nimble Nim Community - <%= @item[:title] %></title>
+    <link rel="stylesheet" href="<%= @items['/stylesheet/'].path %>">
+    <meta name="generator" content="nanoc <%= Nanoc::VERSION %>">
+  </head>
+  <body>
+    <div id="main">
+      <%= yield %>
+    </div>
+    <div id="sidebar">
+      <h2>Nimble Nim Community</h2>
+      <ul>
+        <li><a href="https://github.com/zachaysan/nnc">Our Repo</a></li>
+        <li><a href="/about/">About</a></li>
+      </ul>
+      <h2>Question List</h2>
+      <ul>
+				<% @site.items.map do |i| %>
+				  <% if i.attributes[:filename].start_with? "content/questions" %>
+				    <li><%= link_to_unless_current(i[:title], i) %></li>
+				  <% end %>
+				<% end %>
+      </ul>
+    </div>
+  </body>
+</html>

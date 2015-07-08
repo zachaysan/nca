@@ -1,0 +1,24 @@
+# Preamble
+
+Because I do not want a bunch of blogspam type sites to just rip off the content I'm separating the repo into two sections:
+
+1. Code
+2. Content
+
+Code is anything that a typical user browsing the website cannot see. For example, a Router file, or JavaScript that allows animations, or even the erb / html / markdown "shell" around the actual content.
+
+Content is the actual words, pictures, and media that a user can actually see. What a casual person would call "The Website".
+
+The Ontario / Canadian courts (where Copyright for this project is enforced) are pretty reasonable with the concept of human readable, but loosely defined guides so if you are trying to be pedantic in your interpretation I'm happy to defer to their judgment. Want to be on the safe side? Open a GitHub issue.
+
+# Code
+
+All Code is released free of use and without warranty in accordance with the traditional MIT license. Feel free to fork this project, change the name, and make your own, say, NodeJS site. Please refrain from calling it the "Nimble NodeJS Community" since it may confuse site visitors who may falsely believe that the "Nimble Nim Community" site is financially / legally affiliated with your site.
+
+# Content
+
+All content is Copyrighted to Zach Aysan. Permission is given to fork this repository and thus the copyrighted content within. A pull request which includes content extends worldwide unlimited rights (including modification, transmission, copying, etc) to Zach Aysan.
+
+Essentially, forking the repo and doing a pull request gives me the right to use your content as if it was my own. You still keep your rights to the work you created though.
+
+That being said, if you have a non-spammy reason (you want to create a French translation, for example) to use this content, please feel free to reach out to me I'm almost certain to extend permission.
