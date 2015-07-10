@@ -21,10 +21,10 @@
     </div>
 
     <div id="botbar">
-      <h2>Question List</h2>
+      <h2>Nim Answers</h2>
       <ul>
 				<% @site.items.map do |i| %>
-				  <% if i.attributes[:filename].start_with? "content/questions" %>
+				  <% if i.attributes[:filename].start_with? "content/answers" %>
 				    <li><%= link_to_unless_current(i[:title], i) %></li>
 				  <% end %>
 				<% end %>
