@@ -1,14 +1,14 @@
 ---
-title: Perform HTTP Get Request
+title: Perform an HTTP get request
 ---
 
-# Perform an HTTP Get Requst in Nim
+# Perform an HTTP GET request in Nim
 
 Performing get requests in Nim is pretty simple.
 
     import httpclient
 
+    # Get ready to party!
     echo getContent("http://example.com")
 
-
-So simple.
+That's all there is to it.
