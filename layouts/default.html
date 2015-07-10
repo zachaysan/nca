@@ -7,15 +7,20 @@
     <meta name="generator" content="nanoc <%= Nanoc::VERSION %>">
   </head>
   <body>
+
+		<nav id="topbar">
+			<h2><a href="/">nnc</a></h2>
+			<ul>
+				<li><a href="https://github.com/zachaysan/nnc">repo</a></li>
+				<li><a href="/about/">about</a></li>
+			</ul>
+		</nav>
+
     <div id="main">
       <%= yield %>
     </div>
-    <div id="sidebar">
-      <h2>Nimble Nim Community</h2>
-      <ul>
-        <li><a href="https://github.com/zachaysan/nnc">Our Repo</a></li>
-        <li><a href="/about/">About</a></li>
-      </ul>
+
+    <div id="botbar">
       <h2>Question List</h2>
       <ul>
 				<% @site.items.map do |i| %>
@@ -25,5 +30,6 @@
 				<% end %>
       </ul>
     </div>
+
   </body>
 </html>
