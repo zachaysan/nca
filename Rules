@@ -16,8 +16,8 @@ end
 
 route '*' do
   if item[:extension] == 'css'
-    # Write item with identifier /foo/ to /foo.css
-    item.identifier.chop + '.css'
+    # Write item with identifier /foo/ to /foo.css and fingerprint
+    item.identifier.chop + fingerprint(item[:filename]) + '.' + "css"
   elsif item.binary?
     # Write item with identifier /foo/ to /foo.ext
     item.identifier.chop + (item[:extension] ? '.' + item[:extension] : '')
