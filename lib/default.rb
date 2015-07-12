@@ -4,3 +4,4 @@ require 'nanoc/cachebuster'
 
 include Nanoc::Helpers::LinkTo
 include Nanoc3::Helpers::CacheBusting
+include Nanoc3::Helpers::XMLSitemap
