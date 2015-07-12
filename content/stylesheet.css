@@ -116,7 +116,7 @@ h2 a:hover {
 
 #botbar h2 {
   font-size: 13px;
-
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #333;
 
   line-height: 20px;
