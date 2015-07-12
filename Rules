@@ -1,5 +1,9 @@
 #!/usr/bin/env ruby
 
+compile 'sitemap' do
+  filter :haml
+end
+
 compile '*' do
   if item[:extension] == 'markdown'
     filter :kramdown
@@ -21,6 +25,8 @@ route '*' do
   elsif item.binary?
     # Write item with identifier /foo/ to /foo.ext
     item.identifier.chop + (item[:extension] ? '.' + item[:extension] : '')
+  elsif item[:filename] == "content/sitemap.xml"
+    item.identifier.chop + '.xml'
   else
     # Write item with identifier /foo/ to /foo/index.html
     item.identifier + 'index.html'
