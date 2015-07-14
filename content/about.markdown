@@ -2,10 +2,10 @@
 title: About
 ---
 
-# About Nible Nim Community
+# About Nim Community Answers
 
-The Nimble Nim Community (Nimble Nim for short, or nnc for shorter!) was started by Zach Aysan so he could make Nim solutions Googleable after he solved them the first time. By open sourcing the project, everyone can help create a better Nim.
+I started Nim Community Answers (nca for short) as a little project so I could make Nim solutions Googleable after I solved them for the first time. This project is open source, so feel free to fork and pull request or even just raise an issue if there is an answer you are having trouble finding.
 
-Zach can be found on Twitter [here](https://twitter.com/zachaysan).
+I can be found on Twitter as [zachaysan](https://twitter.com/zachaysan).
 
-Feel free to email him as well: zachaysan@gmail.com is where he is currently found.
+And you can email me here: zachaysan@gmail.com if you have a longer question.
