@@ -1,8 +1,10 @@
 * {
   margin: 0;
   padding: 0;
+}
 
-  font-family: Georgia, Palatino, serif;
+*, :not(code), :not(pre), :not(.hljs)) {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 body {
@@ -17,8 +19,9 @@ body {
 	color: 050505;
 }
 
-a {
+a, span.active {
   text-decoration: none;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 a:link,
@@ -40,8 +43,9 @@ pre {
 code {
   word-wrap: break-word;
   font-family: Consolas, Monaco, 'Lucida Console', monospace;
-  font-size: 0.8em;
+  font-size: 1em;
 	line-height: 1.2em;
+	color: #a8170b;
 }
 
 #main p {
@@ -81,7 +85,7 @@ code {
 }
 
 nav {
-  margin-bottom: 2em;
+  margin-bottom: 1.5em;
 }
 
 #topbar ul {
@@ -92,6 +96,9 @@ nav {
 #topbar h2 {
   display: inline-block;
   padding-right: 1em;
+}
+#logo {
+  font-family: Georgia, Palatino, serif;
 }
 
 #topbar li {
@@ -131,4 +138,105 @@ h2 a:hover {
   font-size: 14px;
 
   line-height: 20px;
+}
+
+/* highlight.js stuff */
+
+.hljs {
+  font-family: Consolas, Monaco, 'Lucida Console', monospace;
+  display: block;
+  overflow-x: auto;
+	background: #eee;
+	color: #111;
+  -webkit-text-size-adjust: none;
+}
+
+.hljs-comment,
+.diff .hljs-header,
+.hljs-doctype,
+.lisp .hljs-string {
+  color: #586e75;
+  font-style: italic;
+}
+
+.hljs-keyword,
+.css .rule .hljs-keyword,
+.hljs-winutils,
+.javascript .hljs-title,
+.method,
+.hljs-addition,
+.css .hljs-tag,
+.hljs-list .hljs-keyword,
+.nginx .hljs-title {
+  color: #a8170b;
+}
+
+.hljs-number,
+.hljs-command,
+.hljs-string,
+.hljs-tag .hljs-value,
+.hljs-doctag,
+.tex .hljs-formula,
+.hljs-regexp,
+.hljs-hexcolor {
+	color: #1693A5;
+}
+
+.hljs-title,
+.hljs-localvars,
+.hljs-function .hljs-title,
+.hljs-chunk,
+.hljs-decorator,
+.hljs-built_in,
+.hljs-identifier,
+.hljs-name,
+.hljs-id {
+	color: #ffb03b;
+}
+
+.hljs-attribute,
+.hljs-variable,
+.lisp .hljs-body,
+.smalltalk .hljs-number,
+.hljs-constant,
+.hljs-class .hljs-title,
+.hljs-parent,
+.hljs-type {
+  color: #b58900;
+}
+
+.css .hljs-attribute {
+  color: #b89859;
+}
+
+.css .hljs-number,
+.css .hljs-hexcolor {
+  color: #dccf8f;
+}
+
+.css .hljs-class {
+  color: #d3a60c;
+}
+
+.hljs-preprocessor,
+.hljs-pragma,
+.hljs-pi,
+.hljs-shebang,
+.hljs-symbol,
+.hljs-symbol .hljs-string,
+.diff .hljs-change,
+.hljs-special,
+.hljs-attr_selector,
+.hljs-important,
+.hljs-subst,
+.hljs-cdata {
+  color: #1693A5;
+}
+
+.hljs-deletion {
+  color: #dc322f;
+}
+
+.tex .hljs-formula {
+  background: #073642;
 }
