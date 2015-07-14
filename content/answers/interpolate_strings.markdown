@@ -6,21 +6,23 @@ title: Interpolate strings
 
 To interpolate strings in Nim:
 
-    import strfmt
+```nim
+import strfmt
 
-    var greeting = "Hello"
-	var name = "Linus"
+var greeting = "Hello"
+var name = "Linus"
 
-    echo interp"$greeting $name"
+echo interp"$greeting $name"
 
-    # To evaluate an expression:
-    var age = 15
-    echo interp"Welcome to Grade ${age - 5}"
+# To evaluate an expression:
+var age = 15
+echo interp"Welcome to Grade ${age - 5}"
 
-    # Evaluate an expression and apply string formatting
-    var pieSlices = 6
-    var slicesEaten = 2
-    echo interp"You ate ${100 * slicesEaten / pieSlices:.1f}% of the pie!"
+# Evaluate an expression and apply string formatting
+var pieSlices = 6
+var slicesEaten = 2
+echo interp"You ate ${100 * slicesEaten / pieSlices:.1f}% of the pie!"
+```
 
 If you get the following error:
 

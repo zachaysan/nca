@@ -6,15 +6,17 @@ title: Generate JSON
 
 To generate JSON in Nim:
 
-    import marshal
+```nim
+import marshal
 
-    type
-      Car = object
-        name: string
-        speed: int
+type
+  Car = object
+    name: string
+    speed: int
 
-    var car = Car(name: "Tesla", speed: 220)
+var car = Car(name: "Tesla", speed: 220)
 
-    echo($$car)
+echo($$car)
+```
 
 There is another (more complex) way to generate JSON in Nim that needs covering later.

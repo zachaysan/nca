@@ -6,8 +6,10 @@ title: Calculate square root
 
 To calculate a square root in Nim simply:
 
-    import math
+```nim
+import math
 
-    echo sqrt(4.0)
+echo sqrt(4.0)
+```
 
 Which prints 2.0

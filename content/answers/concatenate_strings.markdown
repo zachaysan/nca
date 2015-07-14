@@ -6,19 +6,22 @@ title: Concatenate strings
 
 To concatenate strings in Nim
 
-    var greeting = "Hello"
-	var name = "Linus"
+```nim
+var greeting = "Hello"
+var name = "Linus"
 
-    echo greeting & " " & name
+echo greeting & " " & name
+```
 
 There is a (currently experimental) string interpretation option as well.
 
-    import strfmt
+```nim
+import strfmt
 
-    var greeting = "Hello"
-	var name = "Linus"
+var greeting = "Hello"
+var name = "Linus"
 
-    echo interp"$greeting $name"
-
+echo interp"$greeting $name"
+```
 
 Note that string interpretation also works for more complex cases. See [here](/answers/interpolate_strings/) for more information.

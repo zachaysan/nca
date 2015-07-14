@@ -6,9 +6,11 @@ title: Parse JSON
 
 To parse JSON in Nim:
 
-    import json
+```nim
+import json
 
-    var json_string = """{"name": "Linus", "age": "Imortal"}"""
-    echo parseJson(json_string).pretty
+var json_string = """{"name": "Linus", "age": "Imortal"}"""
+echo parseJson(json_string).pretty
+```
 
 See also: [Generating JSON in Nim](/answers/generate_json/)

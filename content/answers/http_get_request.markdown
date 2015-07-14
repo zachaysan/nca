@@ -6,10 +6,12 @@ title: Perform an HTTP(S) get request
 
 Performing get requests in Nim is pretty simple.
 
-    import httpclient
+```nim
+import httpclient
 
-    # Get ready to party!
-    echo getContent("http://example.com")
+# Get ready to party!
+echo getContent("http://example.com")
+```
 
 That's all there is to it for a normal HTTP request, but in order to compile Nim with the necessary SSL libraries, add the following option during compilation:
 
