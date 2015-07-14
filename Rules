@@ -6,10 +6,12 @@ end
 
 compile '*' do
   if item[:extension] == 'markdown'
-    filter :kramdown
+    filter :kramdown, {:input => 'GFM', coderay_line_numbers: nil, enable_coderay: false}
     layout 'default'
   elsif item[:extension] == 'css'
     # don't filter stylesheets
+  elsif item[:extension] == 'js'
+    # don't filter javascript
   elsif item.binary?
     # don't filter binary items
   else
@@ -22,6 +24,8 @@ route '*' do
   if item[:extension] == 'css'
     # Write item with identifier /foo/ to /foo.css and fingerprint
     item.identifier.chop + fingerprint(item[:filename]) + '.' + "css"
+  elsif item[:extension] == 'js'
+    item.identifier.chop + '.' + "js"
   elsif item.binary?
     # Write item with identifier /foo/ to /foo.ext
     item.identifier.chop + (item[:extension] ? '.' + item[:extension] : '')
