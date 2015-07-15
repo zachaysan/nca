@@ -48,12 +48,6 @@ code {
 	color: #a8170b;
 }
 
-#main p {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 15px;
-  max-width: 600px;
-}
-
 #main h1 {
   font-size: 1.45em;
   font-weight: normal;
@@ -62,11 +56,21 @@ code {
   margin-bottom: 0.75em;
 }
 
+#main h2 {
+  font-size: 1.15em;
+  font-weight: normal;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+	margin-top: 1em;
+}
+
 #main p {
-  margin: 20px 0;
-
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 15px;
-
+  max-width: 600px;
+  margin-top: 0.7em;
+  margin-bottom: 1em;
+  font-size: 15px;
   line-height: 20px;
 }
 
@@ -125,7 +129,8 @@ h2 a:hover {
   font-size: 13px;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #333;
-
+  margin-bottom: 0.2em;
+  margin-top: 0.5em;
   line-height: 20px;
 }
 
