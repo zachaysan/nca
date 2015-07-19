@@ -1,0 +1,5 @@
+---
+is_hidden: true
+---
+User-agent: *
+Sitemap: http://nim.community/sitemap.xml
