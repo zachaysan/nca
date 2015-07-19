@@ -116,7 +116,7 @@ nav {
 
 h2 a:link,
 h2 a:visited {
-  color: #0E0E0e;
+  color: #0E0E0E;
 }
 
 h2 a:hover {
@@ -211,7 +211,7 @@ h2 a:hover {
 .hljs-class .hljs-title,
 .hljs-parent,
 .hljs-type {
-  color: #b58900;
+  color: #1693A5;
 }
 
 .css .hljs-attribute {
