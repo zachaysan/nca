@@ -10,3 +10,5 @@ I'm learning Nim and leaving something valuable behind.
 ## Qs
 
 1. Type to pass array with unknown length to c function: unbound or unchecked array
+2. Get max value for `int`
+3. Create shared library
