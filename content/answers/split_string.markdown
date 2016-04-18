@@ -27,7 +27,7 @@ for line in splitLines("secret agent\nextraordinaire"):
   echo line
 ```
 
-Of course if an array of tokens is all you need then simply:
+Of course if an sequence of tokens is all you need then simply:
 
 ```nim
 import strutils
