@@ -14,18 +14,18 @@
 body {
   background: #fefefe;
   max-width: 720px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 1em;
-	margin-bottom: 1em;
-	padding-left: 1em;
-	padding-right: 1em;
-	color: 050505;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  color: 050505;
 }
 
 a, span.active {
   text-decoration: none;
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 a:link,
@@ -39,17 +39,21 @@ a:hover {
 
 
 pre {
-	padding: 1em;
-	background: #eee;
-	max-width: 600px;
+  padding: 1em;
+  background: #eee;
+  max-width: 600px;
 }
 
 code {
   word-wrap: break-word;
   font-family: Consolas, Monaco, 'Lucida Console', monospace;
-  font-size: 1em;
-	line-height: 1.2em;
-	color: #a8170b;
+  font-size: 0.88em;
+  line-height: 1.2em;
+  color: #a8170b;
+}
+
+# main {
+  font-size: 16px;
 }
 
 #main h1 {
@@ -65,16 +69,14 @@ code {
   font-weight: normal;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: bold;
-	margin-top: 1em;
+  margin-top: 1em;
 }
 
 #main p {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 15px;
   max-width: 600px;
   margin-top: 0.7em;
   margin-bottom: 1em;
-  font-size: 15px;
   line-height: 20px;
 }
 
@@ -83,7 +85,7 @@ code {
 }
 
 #main li {
-  font-size: 15px;
+  font-size: 16px;
 
   line-height: 20px;
 }
@@ -124,9 +126,7 @@ h2 a:hover {
 }
 
 #botbar {
-
   padding-left: 20px
-
 }
 
 #botbar h2 {
@@ -143,20 +143,14 @@ h2 a:hover {
   list-style-type: none;
 }
 
-#sidebar li {
-  font-size: 14px;
-
-  line-height: 20px;
-}
-
 /* highlight.js stuff */
 
 .hljs {
   font-family: Consolas, Monaco, 'Lucida Console', monospace;
   display: block;
   overflow-x: auto;
-	background: #eee;
-	color: #111;
+  background: #eee;
+  color: #111;
   -webkit-text-size-adjust: none;
 }
 
@@ -188,7 +182,7 @@ h2 a:hover {
 .tex .hljs-formula,
 .hljs-regexp,
 .hljs-hexcolor {
-	color: #1693A5;
+  color: #1693A5;
 }
 
 .hljs-title,
@@ -200,7 +194,7 @@ h2 a:hover {
 .hljs-identifier,
 .hljs-name,
 .hljs-id {
-	color: #ffb03b;
+  color: #ffb03b;
 }
 
 .hljs-attribute,
