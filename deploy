@@ -1,2 +1,3 @@
 #!/bin/bash
-nanoc deploy
+nanoc &&     # Build the output
+nanoc deploy # And deploy it
