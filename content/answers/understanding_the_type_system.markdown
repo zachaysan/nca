@@ -45,3 +45,5 @@ echo addFive( numbers )
 ## Self nested types frequently fail to compile
 
 Some objects, like Tables, currently give misleading compile errors when subnested. See [this issue](https://github.com/nim-lang/Nim/issues/2722).
+
+See also: [Checking types in Nim](/answers/checking_types/)
