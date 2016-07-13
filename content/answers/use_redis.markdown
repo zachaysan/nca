@@ -14,7 +14,7 @@ Then from Nim simply:
 ```nim
 import redis
 
-# Opensa redis client with default information:
+# Opens a redis client with default information:
 var r = open()
 
 r.setk("best_programming_language", "Nim")
